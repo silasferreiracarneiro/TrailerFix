@@ -7,4 +7,10 @@
     <string name="just_here">Apenas aqui!</string>
     <string name="come_on">Vamos lá?</string>
     <string name="without_wasting_any_more_time">Sem perder mais tempo.</string>
+    <string name="save">Salvar</string>
+    <string name="password">Password</string>
+    <string name="email">E-mail</string>
+    <string name="nome">Nome</string>
+    <string name="logar">Logar</string>
+    <string name="cadastre">Cadastre-se</string>
 </resources>
