@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Trailer Fix</string>
+
+    <string name="introduction">Introdução</string>
+    <string name="read_with_attention">Leia com atenção!</string>
+    <string name="the_best_trailers">Os melhores trailers</string>
+    <string name="just_here">Apenas aqui!</string>
+    <string name="come_on">Vamos lá?</string>
+    <string name="without_wasting_any_more_time">Sem perder mais tempo.</string>
+</resources>
