@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "678853634751",
+    "firebase_url": "https://trailerfix-91647.firebaseio.com",
+    "project_id": "trailerfix-91647",
+    "storage_bucket": "trailerfix-91647.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678853634751:android:123915ab898b45c1",
+        "android_client_info": {
+          "package_name": "com.example.trailerfix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678853634751-jvftg3pj2dtdhdih0gukfsdjhu3g9fdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trailerfix",
+            "certificate_hash": "610d0577a239900751f351b69ee454f1c90f8484"
+          }
+        },
+        {
+          "client_id": "678853634751-ikaa93ngp5cl87r6p16ngpof3u29mn8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2Hibn4HJUukJ3EAMh3uq2_Sf2KFf6h_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678853634751-ikaa93ngp5cl87r6p16ngpof3u29mn8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

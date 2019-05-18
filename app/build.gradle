@@ -42,6 +42,7 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:${rootProject.ext.okhttp}"
     implementation "com.google.dagger:dagger-android:${rootProject.ext.dagger}"
     implementation "com.google.dagger:dagger-android-support:${rootProject.ext.dagger}"
+    implementation "com.google.firebase:firebase-core:${rootProject.ext.firebasecore}"
 
     kapt "com.google.dagger:dagger-android-processor:${rootProject.ext.dagger}"
     kapt "com.google.dagger:dagger-compiler:${rootProject.ext.dagger}"
@@ -51,3 +52,5 @@ dependencies {
     androidTestImplementation "androidx.test:runner:${rootProject.ext.runner}"
     androidTestImplementation "androidx.test.espresso:espresso-core:${rootProject.ext.espresso}"
 }
+
+apply plugin: 'com.google.gms.google-services'
