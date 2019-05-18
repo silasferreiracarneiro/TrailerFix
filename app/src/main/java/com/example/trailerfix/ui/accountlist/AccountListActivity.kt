@@ -1,18 +1,18 @@
-package com.example.trailerfix.ui.home
+package com.example.trailerfix.ui.accountlist
 
 import android.os.Bundle
 import com.example.trailerfix.R
 import com.example.trailerfix.ui.base.BaseActivity
 import javax.inject.Inject
 
-class HomeActivity : BaseActivity(), HomeContract.View {
+class AccountListActivity : BaseActivity(), AccountListContract.View {
 
     @Inject
-    lateinit var presenter : HomeContract.Presenter<HomeContract.View, HomeContract.Interactor>
+    lateinit var presenter : AccountListContract.Presenter<AccountListContract.View, AccountListContract.Interactor>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_account_list)
 
         getActivityComponent().inject(this)
         presenter.onAttach(this)
