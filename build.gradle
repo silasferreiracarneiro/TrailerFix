@@ -48,5 +48,9 @@ ext{
     junit = "4.12"
     runner = "1.1.1"
     espresso = "3.1.1"
-    firebasecore = "16.0.9"
+    firebasecore = "16.0.8"
+    firebaseauth = "16.2.0"
+    playservicesauth = "16.0.1"
+    databaserealtime = "16.1.0"
+    firebasestorage = "16.1.0"
 }

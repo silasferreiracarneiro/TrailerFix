@@ -43,6 +43,10 @@ dependencies {
     implementation "com.google.dagger:dagger-android:${rootProject.ext.dagger}"
     implementation "com.google.dagger:dagger-android-support:${rootProject.ext.dagger}"
     implementation "com.google.firebase:firebase-core:${rootProject.ext.firebasecore}"
+    implementation "com.google.firebase:firebase-auth:${rootProject.ext.firebaseauth}"
+    implementation "com.google.android.gms:play-services-auth:${rootProject.ext.playservicesauth}"
+    implementation "com.google.firebase:firebase-database:${rootProject.ext.databaserealtime}"
+    implementation "com.google.firebase:firebase-storage:${rootProject.ext.firebasestorage}"
 
     kapt "com.google.dagger:dagger-android-processor:${rootProject.ext.dagger}"
     kapt "com.google.dagger:dagger-compiler:${rootProject.ext.dagger}"
