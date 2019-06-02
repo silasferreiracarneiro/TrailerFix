@@ -21,7 +21,7 @@ class InteractorModule(var appCompatActivity: AppCompatActivity) {
 
     @Provides
     @PerActivity
-    fun provideRegister(): RegisterContract.Interactor = RegisterInteractor()
+    fun provideRegister(api: ApiServiceFirebaseContract): RegisterContract.Interactor = RegisterInteractor(api)
 
     @Provides
     @PerActivity

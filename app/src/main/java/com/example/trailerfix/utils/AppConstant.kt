@@ -16,5 +16,8 @@ class AppConstant {
         //Retrofit
         const val URL_BASE = ""
 
+        //FIREBASE
+        const val USER = "USER"
+
     }
 }
