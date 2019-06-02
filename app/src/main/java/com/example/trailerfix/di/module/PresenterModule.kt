@@ -20,27 +20,27 @@ class PresenterModule(appCompatActivity: AppCompatActivity) {
 
     @Provides
     @PerActivity
-    fun provideRegisterPresenter(interactorRegister: RegisterContract.Interactor):
+    fun provideRegister(interactorRegister: RegisterContract.Interactor):
             RegisterContract.Presenter<RegisterContract.View, RegisterContract.Interactor> = RegisterPresenter(interactorRegister)
 
     @Provides
     @PerActivity
-    fun provideLoginPresenter(interactor: LoginContract.Interactor):
+    fun provideLogin(interactor: LoginContract.Interactor):
             LoginContract.Presenter<LoginContract.View, LoginContract.Interactor> =  LoginPresenter(interactor)
 
     @Provides
     @PerActivity
-    fun provideHomePresenter(interactor: HomeContract.Interactor):
+    fun provideHome(interactor: HomeContract.Interactor):
             HomeContract.Presenter<HomeContract.View, HomeContract.Interactor> = HomePresenter(interactor)
 
     @Provides
     @PerActivity
-    fun provideEditProfilePresenter(interactor: ProfileContract.Interactor):
+    fun provideEditProfile(interactor: ProfileContract.Interactor):
             ProfileContract.Presenter<ProfileContract.View, ProfileContract.Interactor> = ProfilePresenter(interactor)
 
     @Provides
     @PerActivity
-    fun provideAccountListPresenter(interactor: AccountListContract.Interactor):
+    fun provideAccountList(interactor: AccountListContract.Interactor):
             AccountListContract.Presenter<AccountListContract.View, AccountListContract.Interactor> = AccountListPresenter(interactor)
 
 }

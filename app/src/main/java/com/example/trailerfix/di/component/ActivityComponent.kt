@@ -1,6 +1,7 @@
 package com.example.trailerfix.di.component
 
 import com.example.trailerfix.di.PerActivity
+import com.example.trailerfix.di.module.DataModule
 import com.example.trailerfix.di.module.InteractorModule
 import com.example.trailerfix.di.module.PresenterModule
 import com.example.trailerfix.ui.accountlist.AccountListActivity
@@ -11,7 +12,13 @@ import com.example.trailerfix.ui.register.RegisterActivity
 import dagger.Component
 
 @PerActivity
-@Component(dependencies = [ApplicationComponent::class], modules = [PresenterModule::class, InteractorModule::class])
+@Component(
+    dependencies = [ApplicationComponent::class],
+    modules = [
+        PresenterModule::class,
+        InteractorModule::class,
+        DataModule::class
+    ])
 interface ActivityComponent {
 
     fun inject(activity: LoginActivity)

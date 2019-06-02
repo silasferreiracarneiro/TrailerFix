@@ -1,6 +1,7 @@
 package com.example.trailerfix.di.module
 
 import androidx.appcompat.app.AppCompatActivity
+import com.example.trailerfix.data.firebase.contract.ApiServiceFirebaseContract
 import com.example.trailerfix.di.PerActivity
 import com.example.trailerfix.ui.accountlist.AccountListContract
 import com.example.trailerfix.ui.accountlist.AccountListInteractor
@@ -16,26 +17,26 @@ import dagger.Module
 import dagger.Provides
 
 @Module
-class InteractorModule(appCompatActivity: AppCompatActivity) {
+class InteractorModule(var appCompatActivity: AppCompatActivity) {
 
     @Provides
     @PerActivity
-    fun provideRegisterInteractor(): RegisterContract.Interactor = RegisterInteractor()
+    fun provideRegister(): RegisterContract.Interactor = RegisterInteractor()
 
     @Provides
     @PerActivity
-    fun provideLoginInteractor(): LoginContract.Interactor = LoginInteractor()
+    fun provideLogin(api: ApiServiceFirebaseContract): LoginContract.Interactor = LoginInteractor(api)
 
     @Provides
     @PerActivity
-    fun provideHomeInteractor(): HomeContract.Interactor = HomeInteractor()
+    fun provideHome(): HomeContract.Interactor = HomeInteractor()
 
     @Provides
     @PerActivity
-    fun provideEditProfileInteractor(): ProfileContract.Interactor = ProfileInteractor()
+    fun provideEditProfile(): ProfileContract.Interactor = ProfileInteractor()
 
     @Provides
     @PerActivity
-    fun provideAccountListInteractor(): AccountListContract.Interactor = AccountListInteractor()
+    fun provideAccountList(): AccountListContract.Interactor = AccountListInteractor()
 
 }

@@ -53,4 +53,7 @@ ext{
     playservicesauth = "16.0.1"
     databaserealtime = "16.1.0"
     firebasestorage = "16.1.0"
+    coroutinescore = "1.2.0"
+    coroutinesandroid = "1.2.0"
+    coroutinesadapter = "0.9.2"
 }

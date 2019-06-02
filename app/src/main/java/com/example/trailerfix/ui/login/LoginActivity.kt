@@ -22,11 +22,17 @@ class LoginActivity : BaseActivity(), LoginContract.View {
         presenter.onAttach(this)
 
         btnLogin.setOnClickListener {
-            startActivity(Intent(this, AccountListActivity::class.java))
+            var email = edtEmail?.text.toString()
+            var password = edtPassword?.text.toString()
+            this.presenter.login(email, password)
         }
 
         txtCadastre.setOnClickListener {
             startActivity(Intent(this, RegisterActivity::class.java))
         }
+    }
+
+    override fun goHome() {
+        startActivity(Intent(this, AccountListActivity::class.java))
     }
 }

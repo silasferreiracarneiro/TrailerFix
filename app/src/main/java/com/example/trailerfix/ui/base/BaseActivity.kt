@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.trailerfix.App
 import com.example.trailerfix.di.component.ActivityComponent
 import com.example.trailerfix.di.component.DaggerActivityComponent
+import com.example.trailerfix.di.module.DataModule
 import com.example.trailerfix.di.module.InteractorModule
 import com.example.trailerfix.di.module.PresenterModule
 import com.example.trailerfix.utils.DialogHelper
@@ -23,6 +24,7 @@ abstract class BaseActivity: AppCompatActivity(), MvpView, BaseFragment.Callback
          mActivityComponent = DaggerActivityComponent.builder()
              .interactorModule(InteractorModule(this))
              .presenterModule(PresenterModule(this))
+             .dataModule(DataModule(this))
              .applicationComponent((application as App).getComponent())
              .build()
      }
